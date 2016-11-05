@@ -1,4 +1,4 @@
-package com.frenetyklok.video7;
+package com.frenetyklok.video07;
 
 public class DeclaracionesOperadores {
 

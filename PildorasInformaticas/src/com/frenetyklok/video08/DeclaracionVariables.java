@@ -1,4 +1,4 @@
-package com.frenetyklok.video8;
+package com.frenetyklok.video08;
 
 public class DeclaracionVariables {
 

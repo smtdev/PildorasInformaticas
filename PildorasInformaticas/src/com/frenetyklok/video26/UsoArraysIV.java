@@ -1,4 +1,4 @@
-package com.frentyklok.video26;
+package com.frenetyklok.video26;
 
 public class UsoArraysIV {
 

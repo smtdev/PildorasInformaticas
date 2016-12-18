@@ -12,16 +12,26 @@ public class EjerciciosArraysV {
 		
 		MetodosUtil a = new MetodosUtil();
 		
-		int[] numeros = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+		int[] numeros = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 		
 		for(int i = 0; i < numeros.length; i++){
 			numeros[i] = a.generaEnteroAleatorioRandom(10, 1);
 			
-			for(int j = 0; j < i; j++){
-				while(numeros[i] == numeros[j]){
-					numeros[i] = a.generaEnteroAleatorioRandom(10, 1);
+			int[] compara = Arrays.copyOfRange(numeros, 0, i);
+			boolean indicador = false;
+			
+			while(indicador == false){
+				for(int j = 0; j < compara.length; j++){
+					if(numeros[i] != compara[j]){
+						indicador = true;
+					}else{
+						numeros[i] = a.generaEnteroAleatorioRandom(10, 1);
+						indicador = false;
+					}
 				}
 			}
+			
+			
 		}
 		
 		for(int i = 0; i < numeros.length; i++){

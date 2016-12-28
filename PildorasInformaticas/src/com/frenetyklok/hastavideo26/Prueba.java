@@ -9,7 +9,7 @@ public class Prueba {
 		
 		int[] numeros = {1,7,4,75,1};
 		Arrays.sort(numeros);
-		int resultado = Arrays.binarySearch(numeros, 33);
+		int resultado = Arrays.binarySearch(numeros, 7);
 		System.out.println(resultado);
 		
 

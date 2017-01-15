@@ -7,11 +7,22 @@ public class Casa {
 	private SalonCasa salonCasa;
 	private CocinaCasa cocina;
 	
+	
+	//este es el primer constructor
 	public Casa(){
 		this.superficie = 0.0;
 		this.direccion = "desconocida";
 		this.salonCasa = new SalonCasa();
 		this.cocina = new CocinaCasa();
+	}
+	
+	//creamos ahora un segundo constructor al que le pasamos parámetros
+	public Casa(double superficie, String direccion, SalonCasa salonCasa, CocinaCasa cocina){
+		this.superficie = superficie;
+		this.direccion = direccion;
+		//no se puede hacer así antes de crear constructores como estos en la clase correpondiente
+		this.salonCasa = new SalonCasa(salonCasa.getNumeroTelevisores(), salonCasa.getTipoSalon());
+		this.cocina = new CocinaCasa(cocina.getEsIndependiente(), cocina.getNumeroDeFuegos());
 	}
 	
 	public double getSuperficie(){

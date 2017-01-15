@@ -21,8 +21,8 @@ public class Casa {
 		this.superficie = superficie;
 		this.direccion = direccion;
 		//no se puede hacer así antes de crear constructores como estos en la clase correpondiente
-		this.salonCasa = new SalonCasa(salonCasa.getNumeroTelevisores(), salonCasa.getTipoSalon());
-		this.cocina = new CocinaCasa(cocina.getEsIndependiente(), cocina.getNumeroDeFuegos());
+		//this.salonCasa = new SalonCasa(salonCasa.getNumeroTelevisores(), salonCasa.getTipoSalon());
+		//this.cocina = new CocinaCasa(cocina.getEsIndependiente(), cocina.getNumeroDeFuegos());
 	}
 	
 	public double getSuperficie(){

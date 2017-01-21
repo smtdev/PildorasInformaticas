@@ -24,5 +24,10 @@ public class ListaCantantesFamosos {
 	public int getTamano(){
 		return nombresCantantes.size();
 	}
+	
+	public ArrayList<String> getLista(){
+		return this.nombresCantantes;
+	}
+	
 
 }

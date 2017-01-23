@@ -29,8 +29,8 @@ public class ListaNumeros {
 		}
 		return suma;
 	}
-	 
 	
+	 
 	
 	
 	public void anadirItem(Integer item){

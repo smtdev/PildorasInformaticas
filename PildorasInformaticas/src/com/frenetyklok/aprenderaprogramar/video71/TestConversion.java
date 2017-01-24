@@ -19,9 +19,17 @@ public class TestConversion {
 		
 		for(int i = 0; i < miListadoAL.size(); i++){
 			if(miListadoAL.get(i) < 10){
-				System.out.println("Detectado un objeto (" + i + "): ");
+				System.out.println("Detectado un objeto (" + i + "): " + miListadoAL.get(i) + " integer con valor < 10 será eliminado.");
+				
+				tmpAL.add(i);
+				System.out.println("Elemento en el array list (" + i + ") :" + miListadoAL.get(i));
 			}
 		}
+		
+		
+	for(int i = 0; i < tmpAL.size(); i++){
+		System.out.println("Eliminamos item " + (tmpAL.get(i)));
+	}
 	}
 
 }

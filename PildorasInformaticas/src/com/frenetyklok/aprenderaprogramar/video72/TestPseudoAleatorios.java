@@ -5,6 +5,8 @@ import com.frenetyklok.aprenderaprogramar.video61.*;
 public class TestPseudoAleatorios {
 	
 	public static void main(String[] args){
+		
+		System.out.println("Arranca el programa!");
 		Integer tmpInteger = 0;
 		EntradaDeTeclado entradaMain = new EntradaDeTeclado();
 		

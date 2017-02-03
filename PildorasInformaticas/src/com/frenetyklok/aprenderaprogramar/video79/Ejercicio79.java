@@ -12,7 +12,19 @@ public class Ejercicio79 {
 		
 		List<Boolean> miLinkedListBooleana = new LinkedList<Boolean>();
 		
-		miLinkedListBooleana = Arrays.asList(miArrayBooleano);//ESTO NO LO TENGO MUY CLARO!!
+		/*
+		 * NO SE PUEDE HACER LO SIGUIENTE PORQUE ASLIST DEVUELVE UN OBJETO DE TIPO LIST
+		 * Y EL CAST A LINKEDLIST DA ERROR
+		 */
+		
+		//LinkedList<Boolean> miLinkedListBooleana = new LinkedList<Boolean>();
+		
+		miLinkedListBooleana = Arrays.asList(miArrayBooleano);
+
+		/*
+		 * EN LA LINEA ANTERIOR NO HACE FALTA HACER CAST YA QUE HAY CONINCIDENCIA PORUQE
+		 * miLinkedListBooleana es un objeto de tipo List
+		 */
 		
 		System.out.println(miLinkedListBooleana);
 		

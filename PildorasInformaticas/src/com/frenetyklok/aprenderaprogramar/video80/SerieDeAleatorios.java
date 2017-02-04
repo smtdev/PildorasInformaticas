@@ -44,7 +44,7 @@ public class SerieDeAleatorios {
 		numeroAleatorio = new Random();
 		
 		for(int i = 0; i < serieAleatoria.size(); i++){
-			serieAleatoria.set(i, numeroAleatorio.nextInt(1000));
+			serieAleatoria.set(i, numeroAleatorio.nextInt(1000));  
 		}
 		
 		System.out.println("Serie generada.");

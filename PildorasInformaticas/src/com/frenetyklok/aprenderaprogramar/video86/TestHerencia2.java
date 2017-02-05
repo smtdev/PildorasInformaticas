@@ -9,10 +9,11 @@ public class TestHerencia2 {
 		ProductoRefrigerado productoRefrigerado = new ProductoRefrigerado("11102016", 123, 777);
 		ProductoCongelado productoCongelado = new ProductoCongelado("17061975", 111, 0);
 		
-		producto.muestraProducto();
-		productoFresco.muestraProducto();
-		productoRefrigerado.muestraProducto();
-		productoCongelado.muestraProducto();
+		System.out.println(producto.muestraProducto());
+		System.out.println(productoFresco.muestraProducto());
+		System.out.println(productoRefrigerado.muestraProducto());
+		System.out.println(productoCongelado.muestraProducto());
+		
 		
 	}
 

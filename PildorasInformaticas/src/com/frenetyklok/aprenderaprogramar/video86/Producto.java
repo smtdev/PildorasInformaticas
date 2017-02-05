@@ -7,7 +7,6 @@ public class Producto {
 	
 	
 	public Producto(String fechaCaducidad, int numeroLote) {
-		super();
 		this.fechaCaducidad = fechaCaducidad;
 		this.numeroLote = numeroLote;
 	}

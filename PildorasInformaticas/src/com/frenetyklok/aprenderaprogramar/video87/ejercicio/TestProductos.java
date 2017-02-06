@@ -41,6 +41,22 @@ public class TestProductos {
 		int[] composicion = { 1,2,34,5,5};
 		ProductoCongeladoAire pCA = new ProductoCongeladoAire(fechaCaducidad, 11, fechaEnvasado, "Jamaica", 23, composicion);
 		System.out.println(pCA);
+		
+		System.out.println("Hacemos algunas pruebas con herencias...");
+		
+		/*
+		 * EL SIGUIENTE OBJETO NO TIENE LOS METODOS PROPIOS DE REFRIGERADO
+		 * PERO SI LO IMPRIMIMOS SI QUE USA TOSTRING DEFINIDO PARA REFRIGERADO
+		 */
+		
+		/*
+		 * POR OTRO LADO SI HACEMOS UN CASTING SI QUE ESTARAN ACCESIBLE LOS METODOS
+		 */
+		
+		Producto productoPrueba = new ProductoRefrigerado(fechaCaducidad, 111, fechaEnvasado, "Madagascar", 111, "PDM");
+		ProductoRefrigerado productoCasteado = (ProductoRefrigerado) productoPrueba;
+		productoCasteado.setCodigoSupervision("RDF");
+		System.out.println(productoCasteado);
 	}
 
 }

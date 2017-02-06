@@ -22,7 +22,7 @@ public class ProductoConservadoFrio extends Producto{
 
 	@Override
 	public String toString() {
-		return super.toString() + "ProductoConservado [temperaturaMantenimiento=" + temperaturaMantenimiento + "]";
+		return super.toString() + "ProductoConservadoFrio [temperaturaMantenimiento=" + temperaturaMantenimiento + "]";
 	}
 
 

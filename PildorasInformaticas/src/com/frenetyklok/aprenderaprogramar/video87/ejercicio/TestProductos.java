@@ -10,7 +10,13 @@ public class TestProductos {
 		Calendar fechaCaducidad = Calendar.getInstance();
 		
 		fechaEnvasado.set(2017, 1, 1);
-		fechaCaducidad.set(2020, 12, 31);
+		fechaCaducidad.set(2020, 11, 31, 12, 1, 1);
+		
+		System.out.println("Este es el tiempo de caducidad en milisegundos:");
+		
+		System.out.println(fechaCaducidad.getTime());//como pasar esto a milisegundos.cuando lo intento me da valores diferentees
+		
+		System.out.println();
 		
 		Producto producto = new Producto(fechaCaducidad, 1, fechaEnvasado, "España");
 		System.out.println(producto);

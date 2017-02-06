@@ -1,4 +1,4 @@
-package com.frenetyklok.aprenderaprogramar.video87;
+package com.frenetyklok.aprenderaprogramar.video87.ejercicio;
 
 import java.util.Calendar;
 

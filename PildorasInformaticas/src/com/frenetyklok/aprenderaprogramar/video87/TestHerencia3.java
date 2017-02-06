@@ -10,6 +10,7 @@ public class TestHerencia3 {
 		profesor1.mostrarDatosProfesor();
 		
 		Calendar fecha1 = Calendar.getInstance();
+		//Calendar fecha1 = new Calendar(); NO SE PUEDE YA QUE ES UN CONSTRUCTOR PROTEGIDO
 		fecha1.set(2109, 10, 22); // YYYY, MM, DD
 		ProfesorInterino interino1 = new ProfesorInterino("Pedro", "Martínez", 43, fecha1);
 		System.out.println("El profesor interino se incorporó en la fecha: " + fecha1.getTime());//no hace falta añadir getTime().toString()

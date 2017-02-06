@@ -9,6 +9,7 @@ public class Producto {
 	private Calendar fechaEnvasado;
 	private String paisOrigen;
 	
+	public Producto(){}
 	
 	public Producto(Calendar fechaCaducidad, int numeroLote, Calendar fechaEnvasado, String paisOrigen) {
 
@@ -61,8 +62,8 @@ public class Producto {
 
 	@Override
 	public String toString() {
-		return "Producto [fechaCaducidad=" + fechaCaducidad + ", numeroLote=" + numeroLote + ", fechaEnvasado="
-				+ fechaEnvasado + ", paisOrigen=" + paisOrigen + "]";
+		return "Producto [fechaCaducidad=" + fechaCaducidad.getTime() + ", numeroLote=" + numeroLote + ", fechaEnvasado="
+				+ fechaEnvasado.getTime() + ", paisOrigen=" + paisOrigen + "]";
 	}
 	
 	

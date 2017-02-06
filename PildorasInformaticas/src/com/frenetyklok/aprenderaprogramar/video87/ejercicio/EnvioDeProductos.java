@@ -22,5 +22,14 @@ public class EnvioDeProductos {
 	public String toString(){
 		return this.envioProductos.toString();
 	}
+	
+	//ES MEJOR CREAR UN METODO PARA AÑADIR OBJETOS AL OBJETO DE TIPO ENVIODEPRODUCTOS
+	//QUE TENER QUE CREAR EL ARRAYLIST PARA LUEGO CREAR EL OBJETO CON EL
+	//DE ESTA FORMA PODEMOS VARIAR EL OBJETO SIN TENER QUE REDEFINIR EL ARRRAY PARA VOLVER A PASARLO 
+	//PARA CAMBIAR EL OBJETO DE TIPO ENVIODEPRODUCTOS
+	
+	public void addProducto(Producto producto){
+		envioProductos.add(producto);
+	}
 
 }

@@ -22,8 +22,8 @@ public class ProfesorInterino extends Profesor {
 	
 	@Override
 	public void mostrarDatos(){
-		System.out.println("Datos profesor interino: ");
 		super.mostrarDatos();
+		System.out.println("Es INTERINO");
 		System.out.println("Fecha comienzo interinidad: " + this.getFechaInterinidad().getTime().toString() + ".");
 	}
 

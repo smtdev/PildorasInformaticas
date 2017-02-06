@@ -23,6 +23,7 @@ public class Profesor extends Persona {
 	}
 	
 	public void mostrarDatos(){
+		System.out.println("Mostrando datos del profesor: ");
 		System.out.println("Nombre: " + this.getNombre() + ".");
 		System.out.println("Apellidos: " + this.getApellidos() + ".");
 		System.out.println("Edad: " + this.getEdad() + " años.");

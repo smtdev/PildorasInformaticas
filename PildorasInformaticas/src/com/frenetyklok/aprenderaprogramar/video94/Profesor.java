@@ -14,6 +14,11 @@ public class Profesor extends Persona {
 		this.idProfesor = "Desconocido";
 	}
 	
+	public Profesor(String nombre, String apellidos, int edad, String idProfesor){
+		super(nombre, apellidos, edad);
+		this.idProfesor = idProfesor;
+	}
+	
 	public void setIdProfesor(String idProfesor){
 		this.idProfesor = idProfesor;
 	}
@@ -44,6 +49,13 @@ public class Profesor extends Persona {
 			return false;
 		}
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "Profesor [idProfesor=" + idProfesor + "]";
+	}
+	
+	
 	
 	
 

@@ -24,6 +24,23 @@ public class TestHerencia5 {
 		System.out.println("Son iguales el profesor1 y el profesor2?: " + profesor1.equals(profesor2));
 		System.out.println("Son iguales el profesor1 y el profesor3?: " + profesor1.equals(profesor3));
 		
+		System.out.println("    ******************");
+		
+		System.out.println();
+		
+		Profesor profesor4 = new Profesor("Pablo", "Hernández", 33);
+		profesor4.setIdProfesor("Prof 22-285-11");
+		
+		Persona persona4 = profesor4;
+		System.out.println(persona4);
+		
+		System.out.println();
+		System.out.println("   *****************");
+		System.out.println();
+		
+		Persona persona6 = new Profesor("Pedro", "Hernández", 33, "idprofesor");
+		System.out.println(persona6);
+		
 	}
 
 }

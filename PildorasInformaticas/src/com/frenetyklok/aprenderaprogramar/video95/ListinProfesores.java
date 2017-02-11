@@ -19,7 +19,7 @@ public class ListinProfesores {
 		String tmpStr1 = "";
 		System.out.println("Se procede a mostrar los datos de los profesores del listín: ");
 		
-		for(Profesor tmp: listinProfesores){
+		for(Profesor tmp: this.listinProfesores){
 			
 			System.out.println(tmp.toString());
 			
@@ -38,7 +38,7 @@ public class ListinProfesores {
 		
 		float importeTotal = 0f;
 		
-		Iterator<Profesor> it = listinProfesores.iterator();
+		Iterator<Profesor> it = this.listinProfesores.iterator();
 		
 		while(it.hasNext()){
 			importeTotal = importeTotal + it.next().importeNomina();

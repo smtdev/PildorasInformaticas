@@ -23,6 +23,8 @@ public class EjercicioAvanzado6 {
 		System.out.println("Programa terminado!");
 		escaner.close();
 		
+		//esto es una prueba para el commit and push 
+		
 	}
 
 }

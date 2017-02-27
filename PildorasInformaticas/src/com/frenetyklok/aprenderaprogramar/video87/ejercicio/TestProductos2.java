@@ -31,6 +31,8 @@ public class TestProductos2 {
 		
 		ProductoCongeladoNitrogeno pCNitrogeno1 = new ProductoCongeladoNitrogeno(fechaCaducidad, 5, fechaEnvasado, "Italia", 2, "ESR", 98);
 		
+		
+		
 		ArrayList<Producto> envio = new ArrayList<Producto>();
 		envio.add(producto1);
 		envio.add(producto2);
@@ -42,6 +44,9 @@ public class TestProductos2 {
 		envio.add(pCAire1);
 		envio.add(pCAire2);
 		envio.add(pCNitrogeno1);
+		
+		//EnvioDeProductos envio1 = new EnvioDeProductos(envio);
+		//si ponemros lo anterior tenemos que modificar la siguiente linea como envio1.getEvioProductos().iterator()
 		
 		Iterator<Producto> it = envio.iterator();
 		while(it.hasNext()){

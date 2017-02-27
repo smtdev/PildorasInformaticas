@@ -13,9 +13,16 @@ public class Primitiva {
 		Random rdm = new Random();
 		Scanner escaner = new Scanner(System.in);
 		
-		String seguimos = "";
+		/*
+		 * LOS OBJETOS STRING SON INMUTABLES. CUANDO CAMBIAMOS SU VALOR LO QUE HACEMOS ES CREAR
+		 * OTRO ESPACIO EN MEMORIA CON ESE VALOR AL QUE APUNTARA LA VARIABLE QUE YA HABIAMOS CREADO 
+		 * QUEDANDO EL PRIMER VALOR INACCESIBLE EN MEMORIA
+		 * USAMOS LA CLASE STRINGBUFFER QUE ES MUTABLE CON LO QUE POEMOS VARIAR EL CONTENIDO DEL 
+		 * ESPACIO EN MEMORIA AL QUE APUNTA LA VARIABLA CON LO QUE NUESTRO PROGRAMA ES MAS EFICIENTE
+		 */
+		StringBuffer seguimos = new StringBuffer("");
 		
-		while(seguimos.equals("")){
+		while(seguimos.toString().equals("")){
 			System.out.println("Comienza el juego!");
 			
 			//EN PRIMER LUGAR VAMOS A GENERAR LA COMBINACIÓN GANADORA
@@ -78,17 +85,18 @@ public class Primitiva {
 			System.out.println("Has tenido " + aciertos + " aciertos!!");
 			
 			System.out.println("Quieres continuar (s-n)?");
-			seguimos = escaner.nextLine();
+			seguimos.append(escaner.nextLine());
 			
-			while(!seguimos.equals("N") && !seguimos.equals("n") && !seguimos.equals("S") && !seguimos.equals("s")){
+			while(!seguimos.toString().equals("N") && !seguimos.toString().equals("n") && !seguimos.toString().equals("S") && !seguimos.toString().equals("s")){
 				System.out.println("Respuesta no válida.");
+				seguimos.delete(0, seguimos.capacity());
 				System.out.println("Quieres continuar (s-n)?");
-				seguimos = escaner.nextLine();
+				seguimos.append(escaner.nextLine());
 			}
 			
-			if(seguimos.equals("S") || seguimos.equals("s")){
+			if(seguimos.toString().equals("S") || seguimos.toString().equals("s")){
 				System.out.println("Bien! Continuamos!");
-				seguimos = "";
+				seguimos.delete(0, seguimos.capacity());
 				numeroElementosGanadora = 0;
 				numeroElementosJugada = 0;
 				for(int i = 0; i < combinacionGanadora.length; i++){

@@ -1,5 +1,7 @@
 package com.frenetyklok.avanzado.t15;
 
+import java.util.Iterator;
+
 public class Programa {
 	
 	public static void main(String[] args){
@@ -12,6 +14,11 @@ public class Programa {
 		
 		ConjuntoPersonas cp = new ConjuntoPersonas(pp);
 		
+		Iterator<Persona> it = cp.iterator();
+		while(it.hasNext()){
+			Persona tmp = it.next();
+			System.out.println(tmp);
+		}
 		
 	}
 

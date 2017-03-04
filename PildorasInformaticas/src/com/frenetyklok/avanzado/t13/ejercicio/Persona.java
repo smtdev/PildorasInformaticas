@@ -59,6 +59,7 @@ public class Persona implements Comparable<Persona> {
 		
 	}
 	
+	//comparador para edad solo
 	public int compareToEdad(Persona o){
 		int resultado = 0;
 		
@@ -68,6 +69,17 @@ public class Persona implements Comparable<Persona> {
 		
 		return resultado;
 		
+	}
+	
+	//comparador para altura solo
+	public int compareToAltura(Persona o){
+		int resultado = 0;
+		
+		if(this.altura < o.altura) resultado = -1;
+		else if(this.altura > o.altura) resultado = 1;
+		else resultado = 0;
+		
+		return resultado;
 	}
 	
 	

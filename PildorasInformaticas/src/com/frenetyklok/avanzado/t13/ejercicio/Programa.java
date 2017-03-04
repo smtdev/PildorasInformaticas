@@ -16,18 +16,22 @@ public class Programa {
 			System.out.println(tmp);
 		}
 		
+		System.out.println();
 		System.out.println("Ahora ordenamos el array:");
 		
-		Arrays.sort(personas);
+		Arrays.sort(personas);//existen variantes de este metodo en los que se usa Comparator
 		for(Persona tmp: personas){
 			System.out.println(tmp);
 		}
 		
-		System.out.println("Ahora ordenamos solo por edad:");
+		System.out.println();
+		System.out.println("Ahora vamos a utilizar comparator:");
 		
-		Comparator<Persona> comparador = Persona.compareToEdad();
+		//Comparator<Persona> comparator = new Comparator<Persona>;
+		//nos queda pendiente usar Comparator
+		//javamexico ordenar objetos por dos o mas atributos (busqueda en google).
 		
-		Arrays.sort
+		
 		
 	}
 

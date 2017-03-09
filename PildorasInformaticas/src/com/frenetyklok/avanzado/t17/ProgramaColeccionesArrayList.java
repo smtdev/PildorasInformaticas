@@ -6,7 +6,7 @@ import java.util.Collection;
 public class ProgramaColeccionesArrayList {
 	
 	public static void main(String[] args){
-		Collection listaMarcaCoches = new ArrayList<String>();
+		Collection<String> listaMarcaCoches = new ArrayList<String>();
 		listaMarcaCoches.add("Audi");
 		listaMarcaCoches.add("Porsche");
 		listaMarcaCoches.add("Aston Martin");

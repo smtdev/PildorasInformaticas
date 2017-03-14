@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class ListaPersonas implements Iterable<Persona>{
 	
-	private ArrayList<Persona> listaPersonas = null;
+	private ArrayList<Persona> listaPersonas;
 	
 	public ListaPersonas(){
 		this.listaPersonas = new ArrayList<Persona>();
@@ -15,7 +15,7 @@ public class ListaPersonas implements Iterable<Persona>{
 	
 	@Override
 	public String toString(){
-		return listaPersonas.toString();
+		return this.listaPersonas.toString();
 	}
 	
 	public Iterator<Persona> iterator(){
@@ -24,31 +24,35 @@ public class ListaPersonas implements Iterable<Persona>{
 	
 	protected class MiIteradorListaPersonas implements Iterator<Persona>{
 		
-		public int posicion = 0;
-		public boolean esEliminable = false;
+		private int posicion = 0;
+		private boolean borrable = false;
 		
 		@Override
-		public boolean hasNext(){
+		public boolean hasNext() {
 			return posicion < listaPersonas.size();
 		}
 		
 		@Override
-		public Persona next(){
-			Persona res = listaPersonas.get(posicion);
+		public Persona next() {
+			Persona persona = listaPersonas.get(posicion);
 			posicion++;
-			esEliminable = true;
-			return res;
+			borrable = true;
+			return persona;
 		}
 		
 		@Override
-		public void remove(){
-			if(esEliminable){
+		public void remove() {
+			
+			if(borrable){
 				listaPersonas.remove(posicion - 1);
-				posicion--; //el elemento actual pasa a estar colocado una posición antes al elimianr el anterior
-				esEliminable = false; //ya que no se puede eliminar un objeto si no se ha hecho next sobre él
+				posicion--;
+				borrable = false;
 			}
+			
 		}
 		
+		
+		
 	}
-
+	
 }

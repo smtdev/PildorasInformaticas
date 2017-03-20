@@ -32,8 +32,8 @@ public class Programa {
 		
 		if(cargaRealContenedor > cargaMaximaContenedor){
 			System.out.println("Necesitamos cargar: " + (cargaRealContenedor - cargaMaximaContenedor) + " Kg. extra.");
-			BigDecimal extra = (cargaRealContenedor - cargaMaximaContenedor)/100;
-			System.out.println(extra);
+			double extra = (cargaRealContenedor - cargaMaximaContenedor)/100.0;//HAY QUE DIVIDIR POR UN DOUBLE PARA QUE SALGA BIEN. PROBAR CON 100
+			System.out.println(extra);//POR QUE NO SALEN LOS DECIMALES?????
 			int nuevaCarga =  (int)Math.ceil(extra);
 			v.ensureCapacity(50 + nuevaCarga);//revisar redondeos
 			System.out.println("La nueva capacidad de paquetes es: " + v.capacity());

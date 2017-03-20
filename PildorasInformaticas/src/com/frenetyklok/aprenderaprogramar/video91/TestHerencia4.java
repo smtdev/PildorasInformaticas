@@ -20,6 +20,9 @@ public class TestHerencia4 {
 		
 		listin1.listar();
 		
+		Profesor profesor2 = new ProfesorInterino("Pablo", "Perez", 34, fecha1);
+		profesor2.mostrarDatos();
+		
 	}
 
 }

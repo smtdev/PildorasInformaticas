@@ -44,7 +44,7 @@ public class TestHerencia3 {
 		 * EN ESTE ULTIMO CASO SI QUE SE PERMITE EL CASTING
 		 */
 		
-		interino1 = (ProfesorInterino) profesor1;
+		//interino1 = (ProfesorInterino) profesor1;
 
 	}
 

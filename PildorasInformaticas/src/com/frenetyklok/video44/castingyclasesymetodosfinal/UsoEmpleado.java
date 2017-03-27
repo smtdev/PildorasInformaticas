@@ -25,6 +25,8 @@ public class UsoEmpleado {
 		 * HEREDA DE JEFE
 		 */
 		
+		
+		
 		Jefatura jefaFinanzas = (Jefatura) misEmpleados[5];
 		jefaFinanzas.setIncentivo(10000);//al final, al usar misEmpleados[5] saldrá lo que queremos porque todas estas variables apuntan al mismo objeto
 		

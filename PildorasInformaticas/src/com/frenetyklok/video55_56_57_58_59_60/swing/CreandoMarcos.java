@@ -1,4 +1,4 @@
-package com.frenetyklok.video55.swing;
+package com.frenetyklok.video55_56_57_58_59_60.swing;
 
 import java.awt.Frame;
 

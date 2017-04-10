@@ -1,4 +1,4 @@
-package com.frenetyklok.video55_56_57_58_59_60.swing;
+package com.frenetyklok.video55_56_57_58_59_60_61_62_63_64.swing;
 
 import javax.swing.*;
 import java.awt.*;

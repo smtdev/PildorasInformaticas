@@ -1,4 +1,4 @@
-package com.frenetyklok.video65_66_67_68_69.eventos;
+package com.frenetyklok.video65to71.eventos;
 
 import java.awt.*;
 import javax.swing.*;
@@ -83,7 +83,7 @@ class MVentana implements WindowListener{
  * COMO ESTAS CLASES IMPLEMENTAN UNA SERIE DE INTERFACES QUE SON LAS QUE NOS INTERESAN YA SOLO TENDREMOS QUE SOBREESCRIBIR EL 
  * METODO QUE VAYAMOS A USAR.
  * POR EJEMPLO, EN EL CASO QUE NOS OCUPA USAMOS LA CLASE WINDOWADAPTER QUE IMPLEMENTA
- *     WindowFocusListener, WindowListener, WindowStateListener, EventListener
+ *     WindowFocusListener, WindowListener, WindowStateListener (detecta cualquier cambio en la ventana), EventListener
  * CON LO QUE YA NO TENDREMOS QUE ESCRIBIR TODOS LOS METODOS DE WINDOWLISTENER Y SOLO LOS QUE NECESITEMOS 
  * LOS TENDREMOS QUE ESCRIBIR
  */

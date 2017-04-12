@@ -1,4 +1,4 @@
-package com.frenetyklok.video65_66_67_68_69.eventos;
+package com.frenetyklok.video65to71.eventos;
 
 import javax.swing.*;
 import java.awt.*;
